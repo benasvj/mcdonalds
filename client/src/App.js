@@ -1,21 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import "./style/main.scss";
+import HomePage from './components/public/HomePage';
+import Shop from './components/public/Shop';
+import Checkout from './components/public/Checkout';
+import Admin from './components/admin/Admin';
+import Login from './components/admin/Login';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+
+class App extends React.Component{
+    render(){
+        return(
+            <BrowserRouter>
+                <Switch>
+                  <Route exact path="/" component={HomePage}/>
+                  <Route path="/shop" component={Shop}/>
+                  <Route path="/admin" component={Admin}/>
+                  <Route path="/login" component={Login}/>
+                  <Route exact path="/checkout" component={Checkout}/>
+                </Switch>
+            </BrowserRouter>
+        );
+    };
+};
 
 export default App;

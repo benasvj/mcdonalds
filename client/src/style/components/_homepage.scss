@@ -1,0 +1,11 @@
+.home-page{
+    img{
+        margin-top:10vh;
+        width:40%;
+        transition:1.5s;
+    }
+    .animate{
+        transform:scale(4);
+        opacity:0;
+    }
+}

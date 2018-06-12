@@ -1,0 +1,34 @@
+.orders-container{
+    height:80px;
+    width:80%;
+    background:rgb(214,214,214);
+    position:absolute;
+    bottom:0;
+    right:0;
+    overflow-y:scroll;
+    max-height:calc(100vh - 80px);
+    #delete-cart{
+        position:absolute;
+        top:0;
+        right:0;
+        background:#cf251c;
+        color:white;
+        border:0px;
+    }
+    .order{
+        display:inline-block;
+        margin-left:5px;
+        position:relative;
+        img{
+            width:50%;
+        }
+        button{
+            position:absolute;
+            top:0;
+            right:25%;
+            background:#cf251c;
+            color:white;
+            border:0px;
+        }
+    }
+}

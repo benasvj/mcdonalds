@@ -1,0 +1,116 @@
+.admin{
+    .admin-orders{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: flex-start;
+    }
+    .active-order{
+        width:200px;
+        margin:15px;
+        min-height:200px;
+        border:1px solid black;
+        border-radius:5px;
+    }
+    aside{
+        width:20%;
+        float:left;
+        height:100vh;
+        border:1px solid orange;
+        a{
+            background:white;
+            border:1px solid orange;
+            color:#000;
+            padding:10px 0;
+            display:block;
+            box-sizing:border-box;
+        }
+        .active{
+            background:orange;
+            color:white;
+        }
+    }
+    .admin-menu .admin-orders{
+        float:right;
+        width:80%;
+    }
+    ul{
+        display:flex;
+        background:lighten(darkred, 30%);
+        justify-content:space-around;
+    }
+    li{
+        font-size:20px;
+        font-weight:300;
+        padding:15px 0;
+        transition: .2s;
+        cursor:pointer;
+        flex:1;
+    }
+    .active-cat{
+        background:white;
+        border:1px solid lighten(darkred, 30%);
+        color:darkred;
+    }
+    .menu-container{
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        padding:40px 0;
+        width:70%;
+        float:right;
+        h3{
+            padding:20px 0;
+            font-size:20px;
+            font-weight:500;
+            text-transform:capitalize;
+        }
+        h5{
+            padding:20px 0;
+            font-size:15px;
+            font-weight:500;
+        }
+    }
+    .menu-item{
+        width:20%;
+        border:1px solid black;
+        border-radius:4px;
+        margin:20px 5px;
+        height:280px;
+        cursor:pointer;
+        img{
+            width:50%;
+        }
+        .remove-item{
+            background:#cf251c;
+            color:white;
+            width:8%;
+            height:20px;
+            width:40%;
+            cursor:pointer;
+            user-select:none;
+            display:block;
+            margin:35px auto;
+        }
+    }
+    input{
+        width:20%;
+        display:block;
+        margin:20px auto;
+        height:30px;
+        border:1px solid black;
+        box-sizing:border-box;
+    }
+    button{
+        border:1px solid orange;
+        background:white;
+        width:20%;
+    }
+    .dropzone{
+        padding:50px 0;
+        width:80%;
+        margin-left:20%;
+    }
+    h2{
+        margin:auto;
+    }
+}
