@@ -26,7 +26,7 @@ class Admin extends React.Component{
     }
 
     componentWillMount(){
-        // jei localStorage turim token
+        // jei localStorage turim token.
         // nuskaitom ji ir i reduceri idedam user.name
         let token = localStorage.getItem('token');
         if(token) token = token.split(' ')[1];
